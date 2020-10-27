@@ -20,10 +20,6 @@ const baseConfig = {
     if (splitChunks) {
       const cacheGroups = splitChunks.cacheGroups;
 
-      if (cacheGroups.shared) {
-        cacheGroups.shared.minSize = 15000;
-        cacheGroups.shared.minChunks = 100;
-      }
       const preactModules = /[\\/]node_modules[\\/](preact|preact-render-to-string|preact-context-provider|redux|react-redux|redux-persist|next-redux-wrapper|react-lazy-load-image-component|styled-components)[\\/]/;
       if (cacheGroups.framework) {
         cacheGroups.preact = Object.assign({}, cacheGroups.framework, {
