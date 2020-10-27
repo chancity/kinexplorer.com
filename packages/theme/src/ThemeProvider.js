@@ -1,3 +1,4 @@
+import React from 'react';
 import {ThemeProvider as _ThemeProvider} from 'styled-components';
 import {theme} from './theme';
 import GlobalStyle from './GlobalStyle';
