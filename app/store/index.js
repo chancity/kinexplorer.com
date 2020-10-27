@@ -1,10 +1,6 @@
 import {persistReducer, persistStore} from 'redux-persist';
 
-import {
-  AnalyticsMiddleware,
-  LoggerMiddleware,
-  PromiseMiddleware,
-} from './_middleware';
+import {LoggerMiddleware, PromiseMiddleware} from './_middleware';
 
 import {applyMiddleware, combineReducers, createStore} from 'redux';
 import thunkMiddleware from 'redux-thunk';
@@ -20,7 +16,6 @@ const makeConfiguredStore = (reducer) => {
       ...[
         LoggerMiddleware,
         PromiseMiddleware,
-        AnalyticsMiddleware,
         thunkMiddleware,
       ],
     ),
