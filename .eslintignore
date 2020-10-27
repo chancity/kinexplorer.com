@@ -1,0 +1,8 @@
+.next
+node_modules
+lib
+docs
+packages
+app/serverless.js
+app/server.js
+next.config.js

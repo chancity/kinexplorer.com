@@ -1,0 +1,40 @@
+{
+  "compilerOptions": {
+    "jsx": "react",
+    "target": "es2017",
+    "module": "commonjs",
+    "lib": [
+      "es2017",
+      "es2019.array",
+      "dom"
+    ],
+    "declaration": true,
+    "declarationMap": true,
+    /* Strict Type-Checking Options */
+    "strict": false,
+    "strictNullChecks": false,
+    "strictFunctionTypes": false,
+    "strictBindCallApply": false,
+    "strictPropertyInitialization": false,
+    "noImplicitThis": false,
+    "alwaysStrict": false,
+    "noImplicitAny": false,
+    /* Additional Checks */
+    "noUnusedLocals": false,
+    "noUnusedParameters": false,
+    "noImplicitReturns": false,
+    "noFallthroughCasesInSwitch": false,
+    /* Module Resolution Options */
+    "moduleResolution": "node",
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "allowUmdGlobalAccess": true,
+    /* Advanced Options */
+    "resolveJsonModule": true
+  },
+  "exclude": [
+    "node_modules",
+    "**/__tests__/**/*",
+    "**/lib/**/*"
+  ]
+}

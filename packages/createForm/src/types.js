@@ -1,0 +1,6 @@
+export const CHANGE_VALUE = 'CHANGE_VALUE';
+export const VALIDATE_FORM = 'VALIDATE_FORM';
+export const INVALIDATE_FORM = 'INVALIDATE_FORM';
+export const RESET_FORM = 'RESET_FORM';
+export const SET_FORM_FIELDS = 'SET_FORM_FIELDS';
+export const REDUX_PERSIST_HYDRATE = 'persist/REHYDRATE';

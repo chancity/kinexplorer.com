@@ -1,0 +1,53 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
+/node_modules
+/.pnp
+.pnp.js
+
+/.idea
+
+# testing
+/coverage
+
+# next.js
+.next
+/out/
+
+# production
+/build
+
+# misc
+.DS_Store
+app/.env
+.env
+
+# debug
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+.vscode
+.idea
+*.iml
+*.code-workspace
+.changelog
+.eslintcache
+
+node_modules
+/packages/**/lib
+build
+yarn-error.log
+/app/.serverless_nextjs/
+/app/.serverless/
+
+lib/core/metadata.js
+lib/core/MetadataBlog.js
+
+website/translated_docs
+website/build/
+website/yarn.lock
+website/node_modules
+website/i18n/*
+/app/out/
+/.priv
