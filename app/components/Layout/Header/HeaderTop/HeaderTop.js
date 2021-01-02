@@ -9,6 +9,7 @@ import useKinPrice from '../../../../hooks/useKinPrice';
 const Container = styled.div`
   display: flex;
   padding: 0.700625rem 0px;
+  justify-content: space-between;
   @media (min-width: ${({theme}) => theme.sizes.tablet}) {
     padding: 1.25rem 0px;
   }
@@ -19,7 +20,6 @@ const Title = styled.a`
   align-self: center;
   line-height: 1.25rem;
   letter-spacing: .025rem;
-  margin-left: 1rem;
   font-size: 1.25rem;
 `
 
@@ -29,6 +29,9 @@ const HeaderTop = () => {
 
   return (
     <Container>
+      <Link href={'/'} passHref>
+        <Title>Kin Explorer</Title>
+      </Link>
       <HamburgerButton
         onClick={updateNavigation}
         open={navigationOpen}
@@ -42,9 +45,6 @@ const HeaderTop = () => {
       >
         <div />
       </HamburgerButton>
-      <Link href={'/'} passHref>
-        <Title>Kin Explorer</Title>
-      </Link>
     </Container>
   )
 }
