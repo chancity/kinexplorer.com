@@ -1,9 +1,9 @@
 import React from 'react';
-import styled from 'styled-components';
+import styled, {css} from 'styled-components';
 
 const HamburgerButton = styled.button`
   width: 1.949375rem;
-
+  flex: none;
   :hover {
     :after,
     :before,
@@ -60,6 +60,14 @@ const HamburgerButton = styled.button`
         transform: scale(0);
       }
     `};
+  }
+  ${({searchOpen}) => searchOpen &&
+    css`
+      display: none;
+      @media (min-width: ${({theme}) => theme.sizes.tablet}) {
+        display: block;
+      }
+    `
   }
 `;
 

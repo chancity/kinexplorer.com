@@ -1,8 +1,8 @@
 import React from 'react';
 import styled, {css} from 'styled-components';
-import {useKinPrice} from '../../../../hooks/useKinPrice';
+import {useKinPrice} from '../../../hooks/useKinPrice';
 import ContentLoader from 'react-content-loader';
-import {theme} from '../../../../core/theme/theme';
+import {theme} from '../../../core/theme/theme';
 
 const MyLoader = (props) => (
   <ContentLoader

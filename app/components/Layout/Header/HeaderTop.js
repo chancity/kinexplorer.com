@@ -1,17 +1,23 @@
 import React from 'react';
-import styled from 'styled-components';
-import HamburgerButton from './HamburgerButton';
-import {useNavigationOpen, useUpdateNavigation} from '../../../../redux/header';
-import layoutMixin from '../LayoutMixin';
+import styled, {css} from 'styled-components';
+import {
+  useNavigationOpen,
+  useSearchOpen,
+  useUpdateNavigationOpen,
+} from '../../../redux/header';
+import layoutMixin from './LayoutMixin';
 import Link from 'next/link'
-import useKinPrice from '../../../../hooks/useKinPrice';
+import {HamburgerButton} from '../../Icons';
+import {Search} from './Search';
 
 const Container = styled.div`
   display: flex;
   padding: 0.700625rem 0px;
   justify-content: space-between;
+  height: 4.5rem;
   @media (min-width: ${({theme}) => theme.sizes.tablet}) {
     padding: 1.25rem 0px;
+    height: 6rem;
   }
   ${layoutMixin}
 `
@@ -21,18 +27,37 @@ const Title = styled.a`
   line-height: 1.25rem;
   letter-spacing: .025rem;
   font-size: 1.25rem;
+  color: ${({theme}) => theme.color.interactive.normal};
+  flex: none;
+  :hover {
+    color: ${({theme}) => theme.color.interactive.hover};
+  }
+  ${({searchOpen}) => searchOpen &&
+    css`
+      display: none;
+      @media (min-width: ${({theme}) => theme.sizes.tablet}) {
+        display: block;
+      }
+    `
+  }
 `
 
 const HeaderTop = () => {
   const navigationOpen = useNavigationOpen();
-  const updateNavigation = useUpdateNavigation();
+  const updateNavigation = useUpdateNavigationOpen();
+  const searchOpen = useSearchOpen();
 
   return (
     <Container>
-      <Link href={'/'} passHref>
-        <Title>Kin Explorer</Title>
+      <Link
+        href={'/'}
+        passHref
+      >
+        <Title searchOpen={searchOpen}>Kin Explorer</Title>
       </Link>
+      <Search/>
       <HamburgerButton
+        searchOpen={searchOpen}
         onClick={updateNavigation}
         open={navigationOpen}
         data-track={'click'}

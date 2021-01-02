@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import layoutMixin from '../LayoutMixin';
+import layoutMixin from './LayoutMixin';
 import KinPrice from './KinPrice';
 
 const Container = styled.div`

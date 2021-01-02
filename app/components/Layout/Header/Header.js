@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
-import HeaderTop from './HeaderTop/HeaderTop';
-import HeaderBottom from './HeaderBottom/HeaderBottom';
+import HeaderTop from './HeaderTop';
+import HeaderBottom from './HeaderBottom';
 import JoinDiscord from './JoinDiscord';
 
 const Container = styled.header`
