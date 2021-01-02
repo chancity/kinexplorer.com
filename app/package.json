@@ -13,6 +13,7 @@
   "dependencies": {
     "next-optimized-images": "^2.6.0",
     "imagemin-optipng": "^7.1.0",
+    "swr": "^0.3.11",
     "next": "^10.0.0",
     "next-redux-wrapper": "^6.0.2",
     "preact": "^10.5.5",

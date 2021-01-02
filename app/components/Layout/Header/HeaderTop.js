@@ -4,6 +4,7 @@ import HamburgerButton from './HamburgerButton';
 import {useNavigationOpen, useUpdateNavigation} from '../../../redux/header';
 import layoutMixin from './LayoutMixin';
 import Link from 'next/link'
+import useKinPrice from '../../../hooks/useKinPrice';
 
 const Container = styled.div`
   display: flex;
@@ -22,12 +23,21 @@ const Title = styled.a`
 `
 
 const HeaderTop = () => {
+  const navigationOpen = useNavigationOpen();
+  const updateNavigation = useUpdateNavigation();
 
   return (
     <Container>
       <HamburgerButton
-        onClick={useUpdateNavigation()}
-        open={useNavigationOpen()}
+        onClick={updateNavigation}
+        open={navigationOpen}
+        data-track={'click'}
+        data-track-location={'header'}
+        data-track-element={'link'}
+        data-track-value={`hamburger menu:${navigationOpen}`}
+        aria-expanded={navigationOpen}
+        aria-haspopup={'true'}
+        aria-label={'Menu'}
       >
         <div />
       </HamburgerButton>

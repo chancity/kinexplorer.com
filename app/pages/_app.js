@@ -23,6 +23,7 @@ if (process.env.NODE_ENV !== 'production' && !isServer) {
   axe(React, ReactDOM, 1000);
 }
 
+
 export default wrapper({
   ...header
 }).withRedux(

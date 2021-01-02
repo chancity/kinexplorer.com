@@ -59,7 +59,7 @@ export default (action, key) => {
 
         thunk(dispatch, getState)
         .then((response) => {
-          dispatch(fetchSuccess(response.data, formattedArgs));
+          dispatch(fetchSuccess(response, formattedArgs));
           resolve(response);
         })
         .catch((error) => {
