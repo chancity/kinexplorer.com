@@ -12,17 +12,12 @@ const Container = styled.main`
 
 const Layout = forwardRef(({
                              children,
-                             useNavigationOpen,
-                             useUpdateNavigation,
                              ...props
                            },
                            ref,
 ) => (
   <>
-    <Header
-      useNavigationOpen={useNavigationOpen}
-      useUpdateNavigation={useUpdateNavigation}
-    />
+    <Header />
     <Container {...props} ref={ref}>
       {children}
     </Container>

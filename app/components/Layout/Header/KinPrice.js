@@ -22,7 +22,6 @@ function round(value, precision) {
   return Math.round(value * multiplier) / multiplier;
 }
 
-
 const Container = styled.div`
   display: inline-flex;
   align-items: center;
