@@ -2,7 +2,7 @@ require('dotenv').config();
 const withOptimizedImages = require('next-optimized-images');
 const withSourceMaps = require('@zeit/next-source-maps')();
 const withBundleAnalyzer = require('@next/bundle-analyzer')({
-  enabled: false,
+  enabled: true,
 });
 
 const baseConfig = {
@@ -20,7 +20,7 @@ const baseConfig = {
     if (splitChunks) {
       const cacheGroups = splitChunks.cacheGroups;
 
-      const preactModules = /[\\/]node_modules[\\/](preact|preact-render-to-string|preact-context-provider|redux|react-redux|redux-persist|next-redux-wrapper|styled-components)[\\/]/;
+      const preactModules = /[\\/]node_modules[\\/](preact|preact-render-to-string|preact-context-provider|redux|react-redux|redux-persist|next-redux-wrapper|styled-components|@emotion)[\\/]/;
       if (cacheGroups.framework) {
         cacheGroups.preact = Object.assign({}, cacheGroups.framework, {
           test: preactModules,
