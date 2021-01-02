@@ -1,9 +1,11 @@
 import React from 'react';
 import styled from 'styled-components';
+import DiscordIcon from '../../Icons/DiscordIcon';
 
 const Container = styled.div`
   display: flex;
   justify-content: center;
+  align-items: center;
   font-size: 0.875rem;
   line-height: 2.25rem;
   font-weight: 500;
@@ -13,6 +15,14 @@ const Container = styled.div`
   background-color: ${({theme}) => theme.color.interactive.blue};
 `
 
+const StyledDiscordIcon = styled(DiscordIcon)`
+  height: 1.5rem;
+  width: 1.5rem;
+  fill: ${({theme}) => theme.color.header.primary};
+  margin-left: 0.5rem;
+`;
+
+
 const JoinDiscord = () => {
   return (
     <Container>
@@ -21,6 +31,7 @@ const JoinDiscord = () => {
          rel="noreferrer"
       >
         Join Discord
+        <StyledDiscordIcon/>
       </a>
     </Container>
   )
