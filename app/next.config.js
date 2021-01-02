@@ -2,7 +2,7 @@ require('dotenv').config();
 const withOptimizedImages = require('next-optimized-images');
 const withSourceMaps = require('@zeit/next-source-maps')();
 const withBundleAnalyzer = require('@next/bundle-analyzer')({
-  enabled: true,
+  enabled: false,
 });
 
 const baseConfig = {
