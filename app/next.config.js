@@ -20,7 +20,7 @@ const baseConfig = {
     if (splitChunks) {
       const cacheGroups = splitChunks.cacheGroups;
 
-      const preactModules = /[\\/]node_modules[\\/](preact|preact-render-to-string|preact-context-provider|redux|react-redux|redux-persist|next-redux-wrapperstyled-components)[\\/]/;
+      const preactModules = /[\\/]node_modules[\\/](preact|preact-render-to-string|preact-context-provider|redux|react-redux|redux-persist|next-redux-wrapper|styled-components)[\\/]/;
       if (cacheGroups.framework) {
         cacheGroups.preact = Object.assign({}, cacheGroups.framework, {
           test: preactModules,
