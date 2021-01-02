@@ -120,7 +120,6 @@ const Container = styled.div`
   };
   @media (min-width: ${({theme}) => theme.sizes.tablet}) {
     margin: 0 1rem;
-    padding: 0;
   }
 `;
 
