@@ -21,7 +21,6 @@ const Title = styled.a`
   line-height: 1.25rem;
   letter-spacing: .025rem;
   font-size: 1.25rem;
-
 `
 
 const HeaderTop = () => {
