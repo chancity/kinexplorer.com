@@ -10,11 +10,21 @@ const darkColors = {
     muted: '#72767d',
     link: '#00b0f4'
   },
+  accent: {
+    green: '#43b581',
+    yellow: '#faa61a',
+    red: '#f04747',
+    blue: '#8ea1e1'
+  },
   interactive: {
     normal: '#b9bbbe',
     hover: '#dcddde',
     active: '#fff',
-    muted: '#4f545c'
+    muted: '#4f545c',
+    red: '#f04747',
+    blue: '#7289da',
+    grey: '#747f8d',
+    orange: '#f26522'
   },
   background: {
     primary: '#36393f',

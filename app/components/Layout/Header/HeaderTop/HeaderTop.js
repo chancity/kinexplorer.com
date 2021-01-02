@@ -1,10 +1,10 @@
 import React from 'react';
 import styled from 'styled-components';
 import HamburgerButton from './HamburgerButton';
-import {useNavigationOpen, useUpdateNavigation} from '../../../redux/header';
-import layoutMixin from './LayoutMixin';
+import {useNavigationOpen, useUpdateNavigation} from '../../../../redux/header';
+import layoutMixin from '../LayoutMixin';
 import Link from 'next/link'
-import useKinPrice from '../../../hooks/useKinPrice';
+import useKinPrice from '../../../../hooks/useKinPrice';
 
 const Container = styled.div`
   display: flex;
@@ -20,6 +20,7 @@ const Title = styled.a`
   line-height: 1.25rem;
   letter-spacing: .025rem;
   margin-left: 1rem;
+  font-size: 1.25rem;
 `
 
 const HeaderTop = () => {
