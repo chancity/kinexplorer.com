@@ -11,10 +11,6 @@
     "stop": "serverless remove --verbose --debug --package ../node_modules"
   },
   "dependencies": {
-    "@kinexplorer/theme": "0.0.1",
-    "@kinexplorer/hooks": "0.0.1",
-    "@kinexplorer/create-fetch": "0.0.1",
-    "@kinexplorer/create-form": "0.0.1",
     "next-optimized-images": "^2.6.0",
     "imagemin-optipng": "^7.1.0",
     "next": "^10.0.0",

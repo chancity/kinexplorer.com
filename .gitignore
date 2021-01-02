@@ -35,7 +35,7 @@ yarn-error.log*
 .eslintcache
 
 node_modules
-/packages/**/lib
+/app/core/**/lib
 build
 yarn-error.log
 /app/.serverless_nextjs/
