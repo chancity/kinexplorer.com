@@ -122,7 +122,7 @@ const Container = styled.div`
   }
 
   ${FloatLabel} {
-    top: 1rem;
+    top: 0.9rem;
     left: 0.5rem;
   }
   ${({searchOpen}) => searchOpen &&
