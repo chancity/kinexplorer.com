@@ -8,7 +8,7 @@ const UPDATE_SEARCH_TERM = 'UPDATE_SEARCH_TERM'
 const initialState = {
   navigationOpen: false,
   searchOpen: false,
-  searchTerm: null
+  searchTerm: ''
 }
 
 
