@@ -9,12 +9,8 @@
     "dev:v1": "yarn workspace app dev",
     "build": "yarn build:v1",
     "build:v1": "yarn workspace app build",
-    "prettier": "prettier --config .prettierrc --write \"**/*.{js,ts}\"",
-    "prettier:diff": "prettier --config .prettierrc --list-different \"**/*.{js,ts}\"",
-    "prettier-docs": "prettier --config .prettierrc --write \"**/*.md\"",
-    "lint": "yarn lint:js && yarn lint:style",
+    "lint": "yarn lint:js",
     "lint:js": "eslint --cache \"**/*.{js,jsx,ts,tsx}\" --fix",
-    "lint:style": "stylelint \"**/*.css\"",
     "watch": "yarn lerna run --parallel --no-private watch"
   },
   "devDependencies": {
