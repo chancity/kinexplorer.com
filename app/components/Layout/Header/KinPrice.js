@@ -35,9 +35,9 @@ const Container = styled.div`
 const PercentageChange = styled.div`
   margin-left: 1rem;
   color: #fff;
-  padding: 5px 10px;
-  border-radius: 8px;
-  font-size: 14px;
+  padding: 0.1875rem 0.5rem;
+  border-radius: 0.5rem;
+  font-size: 0.875rem;
   font-weight: 600;
   ${({down}) =>
     down ?
