@@ -27,11 +27,8 @@ const Title = styled.a`
   line-height: 1.25rem;
   letter-spacing: .025rem;
   font-size: 1.25rem;
-  color: ${({theme}) => theme.color.interactive.normal};
+  color: ${({theme}) => theme.color.logoPrimary};
   flex: none;
-  :hover {
-    color: ${({theme}) => theme.color.interactive.hover};
-  }
   ${({searchOpen}) => searchOpen &&
     css`
       display: none;
