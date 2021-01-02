@@ -45,7 +45,7 @@ const SearchButton = styled.button`
 `;
 
 const CloseButton = styled.button`
-  width: 2.75rem;
+  width: 1.949375rem;
   height: 2.75rem;
   top: 0;
   position: absolute;
