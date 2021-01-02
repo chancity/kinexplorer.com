@@ -36,7 +36,7 @@ const makeStore = (staticReducers) => {
     const persistConfig = {
       key: 'nextjs',
       storage,
-      blacklist: [],
+      blacklist: ['header'],
       version: -1,
     };
 
