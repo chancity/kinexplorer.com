@@ -38,29 +38,6 @@ const HamburgerButton = styled.button`
     }
   `};
 
-  @media (min-width: ${({theme}) => theme.sizes.tablet}) {
-    width: 2.574375rem;
-
-    :after,
-    :before,
-    div {
-      height: 0.05rem;
-      margin: 0.825rem 0;
-    }
-
-    ${(p) => p.open &&
-      `
-      :before {
-        transform: translateY(0.875rem) rotate(135deg);
-      }
-      :after {
-        transform: translateY(-0.875rem) rotate(-135deg);
-      }
-      div {
-        transform: scale(0);
-      }
-    `};
-  }
   ${({searchOpen}) => searchOpen &&
     css`
       display: none;

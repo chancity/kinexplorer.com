@@ -15,10 +15,6 @@ const Container = styled.div`
   padding: 0.700625rem 0px;
   justify-content: space-between;
   height: 4.5rem;
-  @media (min-width: ${({theme}) => theme.sizes.tablet}) {
-    padding: 1.25rem 0px;
-    height: 6rem;
-  }
   ${layoutMixin}
 `
 

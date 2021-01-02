@@ -12,11 +12,6 @@ const SearchIco = styled(SearchIcon)`
   fill: ${({theme}) => theme.color.text.muted};
   height: 1.166875rem;
   width: 1.166875rem;
-
-  @media (min-width: ${({theme}) => theme.sizes.tablet}) {
-    height: 1.5rem;
-    width: 1.5rem;
-  }
 `;
 
 const SearchButton = styled.button`
@@ -44,12 +39,8 @@ const SearchButton = styled.button`
     `
       right: 2.75rem;
   `};
-
   @media (min-width: ${({theme}) => theme.sizes.tablet}) {
-    top: 0;
     right: 0;
-    width: 3.5rem;
-    height: 3.5rem;
   }
 `;
 
@@ -101,13 +92,10 @@ const Form = styled.form`
         width: calc(100% - 2.75rem - 2.75rem);
       }
   `};
+
   @media (min-width: ${({theme}) => theme.sizes.tablet}) {
     input {
-      width: calc(100% - 3.5rem);
-      max-height: 3.5rem;
-      padding: 1rem;
-      padding-top: 1.2rem;
-      padding-bottom: 0.8rem;
+      width: calc(100% - 2.75rem);
     }
   }
 `;
@@ -133,11 +121,6 @@ const Container = styled.div`
   @media (min-width: ${({theme}) => theme.sizes.tablet}) {
     margin: 0 1rem;
     padding: 0;
-
-    ${FloatLabel} {
-      left: 1.1rem;
-      top: 1.25rem;
-    }
   }
 `;
 
@@ -222,7 +205,7 @@ const Search = () => {
           <SearchCloseIcon />
         </CloseButton>
       </Form>
-{/*      <Results open={searchOpen}/> */}
+      {/*      <Results open={searchOpen}/> */}
     </Container>
   );
 };
