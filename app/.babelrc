@@ -1,16 +1,7 @@
 {
   "presets": [
     [
-      "next/babel",
-      {
-        "preset-env": {
-          "targets": {
-            "browsers": [
-              ">0.03%"
-            ]
-          }
-        }
-      }
+      "next/babel"
     ]
   ],
   "plugins": [
