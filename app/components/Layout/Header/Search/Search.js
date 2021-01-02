@@ -113,7 +113,7 @@ const Form = styled.form`
 `;
 
 const Container = styled.div`
-  margin: 0 2rem;
+  margin: 0 1rem;
   padding: 0.175rem 0;
   position: relative;
   width: 100%;
@@ -131,7 +131,7 @@ const Container = styled.div`
     `
   };
   @media (min-width: ${({theme}) => theme.sizes.tablet}) {
-    margin: 0 4rem;
+    margin: 0 1rem;
     padding: 0;
 
     ${FloatLabel} {
