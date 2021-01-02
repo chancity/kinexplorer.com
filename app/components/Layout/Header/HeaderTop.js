@@ -5,7 +5,7 @@ import {
   useSearchOpen,
   useUpdateNavigationOpen,
 } from '../../../redux/header';
-import layoutMixin from './LayoutMixin';
+import layoutMixin from '../LayoutMixin';
 import Link from 'next/link'
 import {HamburgerButton} from '../../Icons';
 import {Search} from './Search';
