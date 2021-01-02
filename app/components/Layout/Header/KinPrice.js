@@ -26,7 +26,7 @@ function round(value, precision) {
 const Container = styled.div`
   display: inline-flex;
   align-items: center;
-  max-width: 9.75rem;
+  max-width: 10.9375rem;
   min-width: 9.75rem;
   line-height: 1.25rem;
   letter-spacing: .025rem;
