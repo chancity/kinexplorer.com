@@ -7,13 +7,13 @@ import {theme} from '../../../core/theme/theme';
 const MyLoader = (props) => (
   <ContentLoader
     speed={1}
-    width={'100%'}
-    height={'1.625rem'}
+    width="100%"
+    height="1.625rem"
     backgroundColor={theme.color.background.accent}
     foregroundColor={theme.color.background.primary}
     {...props}
   >
-    <rect x='0' y='0' rx='3' ry='3' width={'100%'} height={'100%'} />
+    <rect x='0' y='0' rx='3' ry='3' width="100%" height="100%" />
   </ContentLoader>
 );
 
@@ -51,7 +51,7 @@ const KinPrice = () => {
     isLoading,
   } = useKinPrice();
 
-  //data.prices.day.percent_change
+  // data.prices.day.percent_change
   return (
     <Container>
       {isLoading ?

@@ -47,7 +47,7 @@ const HeaderTop = () => {
   return (
     <Container>
       <Link
-        href={'/'}
+        href="/"
         passHref
       >
         <Title searchOpen={searchOpen}>Kin Explorer</Title>
@@ -57,13 +57,13 @@ const HeaderTop = () => {
         searchOpen={searchOpen}
         onClick={updateNavigation}
         open={navigationOpen}
-        data-track={'click'}
-        data-track-location={'header'}
-        data-track-element={'link'}
+        data-track="click"
+        data-track-location="header"
+        data-track-element="link"
         data-track-value={`hamburger menu:${navigationOpen}`}
         aria-expanded={navigationOpen}
-        aria-haspopup={'true'}
-        aria-label={'Menu'}
+        aria-haspopup="true"
+        aria-label="Menu"
       >
         <div />
       </HamburgerButton>

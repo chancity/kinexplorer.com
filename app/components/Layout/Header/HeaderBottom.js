@@ -35,7 +35,7 @@ const HeaderTop = () => {
     <Container>
       <InnerContainer>
         <Anchor
-          href={'https://github.com/chancity/kinexplorer.com'}
+          href="https://github.com/chancity/kinexplorer.com"
           target='_blank'
           rel='noreferrer'
         >

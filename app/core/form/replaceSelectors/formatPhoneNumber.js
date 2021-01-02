@@ -5,9 +5,9 @@ export default (input) => {
 
   if (input.length > 6) {
     return `(${zip}) ${middle}-${last}`;
-  } else if (input.length > 3) {
+  } if (input.length > 3) {
     return `(${zip}) ${middle}`;
-  } else if (input.length > 0) {
+  } if (input.length > 0) {
     return `(${zip}`;
   }
 

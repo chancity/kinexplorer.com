@@ -190,39 +190,39 @@ const Search = () => {
           window.location.href = `/shop/SearchDisplay?categoryId=&storeId=10151&catalogId=10051&langId=-1&sType=SimpleSearch&resultCatEntryType=2&showResultsPage=true&searchSource=Q&pageView=&beginIndex=0&pageSize=48&fromPageValue=search&searchKeyword=&searchTerm=${searchTerm}`;
         }}>
         <FloatInput
-          id={'header-search'}
-          floatLabel={'Search...'}
-          aria-label={'Search'}
-          hideOnActive={true}
-          type={'search'}
+          id="header-search"
+          floatLabel="Search..."
+          aria-label="Search"
+          hideOnActive
+          type="search"
           error={false}
-          errorMessage={''}
-          autoComplete={'off'}
+          errorMessage=""
+          autoComplete="off"
           value={searchTerm}
           onFocus={openSearch}
           onClick={openSearch}
           onChange={onChange}
         />
         <SearchButton
-          type={'submit'}
+          type="submit"
           active={!!searchTerm}
           open={searchOpen}
           disabled={!searchTerm}
-          data-track={'click'}
-          data-track-location={'search'}
-          data-track-element={'link'}
-          data-track-value={'standard search:' + searchTerm}
+          data-track="click"
+          data-track-location="search"
+          data-track-element="link"
+          data-track-value={`standard search:${  searchTerm}`}
         >
           <SearchIco />
         </SearchButton>
         <CloseButton
-          aria-label={'Close search'}
+          aria-label="Close search"
           open={searchOpen}
           onClick={searchCloseButton}>
           <SearchCloseIcon />
         </CloseButton>
       </Form>
-{/*      <Results open={searchOpen}/>*/}
+{/*      <Results open={searchOpen}/> */}
     </Container>
   );
 };

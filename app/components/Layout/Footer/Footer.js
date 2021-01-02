@@ -10,8 +10,7 @@ const Container = styled.footer`
 
 
 const Footer = () => (
-  <Container>
-  </Container>
+  <Container />
 );
 
 export default Footer;

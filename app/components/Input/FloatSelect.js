@@ -61,7 +61,7 @@ export default React.forwardRef((props = {}, ref) => {
     wrap = false,
   } = props;
 
-  if (!id) throw `No element id specified for '${floatLabel}'.`;
+  if (!id) {throw `No element id specified for '${floatLabel}'.`;}
 
   const handleFocus = (e) => {
     onFocus && onFocus(e);

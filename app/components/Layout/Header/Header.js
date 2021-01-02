@@ -12,7 +12,7 @@ const Container = styled.header`
 const Header = () => (
   <Container>
     <JoinDiscord/>
-    <Container as={'div'} css={`margin-bottom: 0.125rem`}>
+    <Container as="div" css="margin-bottom: 0.125rem">
       <HeaderTop />
     </Container>
     <HeaderBottom />

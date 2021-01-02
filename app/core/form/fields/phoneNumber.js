@@ -9,11 +9,11 @@ export default {
   initialValue: '',
   initialError: [],
   replaceSelector: {
-    cleanPhoneNumber: cleanPhoneNumber,
-    formatPhoneNumber: formatPhoneNumber,
+    cleanPhoneNumber,
+    formatPhoneNumber,
   },
   errorSelector: {
-    requiredField: requiredField,
-    phoneNumberOnly: phoneNumberOnly,
+    requiredField,
+    phoneNumberOnly,
   },
 };

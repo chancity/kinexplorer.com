@@ -1,4 +1,5 @@
 import requiredFieldErrorSelector from '../errorSelectors/requiredField';
+
 export default {
   key: 'password',
   label: 'Password',

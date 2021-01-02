@@ -38,7 +38,7 @@ const FloatInput = React.forwardRef((props = {}, ref) => {
     id,
   } = props;
 
-  if (!id) throw `FloatInput: No element id specified for '${floatLabel}'.`;
+  if (!id) {throw `FloatInput: No element id specified for '${floatLabel}'.`;}
 
   const handleFocus = (e) => {
     onFocus && onFocus(e);

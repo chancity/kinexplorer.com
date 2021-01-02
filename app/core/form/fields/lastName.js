@@ -7,7 +7,7 @@ export default {
   initialValue: '',
   initialError: [],
   errorSelector: {
-    requiredField: requiredField,
-    alphabetOnly: alphabetOnly,
+    requiredField,
+    alphabetOnly,
   },
 };

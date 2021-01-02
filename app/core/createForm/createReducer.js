@@ -13,9 +13,9 @@ export default (
   const hasCustomErrorHandler = typeof customHasErrors === 'function';
 
   return (state = initial, {key, payload, type}) => {
-    let CHANGE_VALUE = undefined;
+    let CHANGE_VALUE;
 
-    if (key) CHANGE_VALUE = createFormChangeValueType(key);
+    if (key) {CHANGE_VALUE = createFormChangeValueType(key);}
 
     let newState = state;
 
@@ -39,7 +39,7 @@ export default (
         break;
       case SET_FORM_FIELDS:
         newState = properties.reduce((state, key) => {
-          if (!payload[key]) return state;
+          if (!payload[key]) {return state;}
           const replaceValue = replaceSelector[key](payload[key]);
           return {
             ...state,

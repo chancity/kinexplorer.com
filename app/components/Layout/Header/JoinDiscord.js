@@ -26,7 +26,7 @@ const StyledDiscordIcon = styled(DiscordIcon)`
 const JoinDiscord = () => {
   return (
     <Container>
-      <a href={'https://discord.gg/WFz8gT2'}
+      <a href="https://discord.gg/WFz8gT2"
          target="_blank"
          rel="noreferrer"
       >

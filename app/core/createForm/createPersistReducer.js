@@ -4,7 +4,7 @@ export default (initial, formName) => (state = initial, action = {}) => {
   const isPersistAction = action.type === REDUX_PERSIST_HYDRATE;
   if (!isPersistAction || typeof action.payload === 'undefined') {
     return state;
-  } else {
+  } 
 
     let persistedForm = {};
     if (action.payload.form) {
@@ -17,5 +17,5 @@ export default (initial, formName) => (state = initial, action = {}) => {
       ...initial,
       ...persistedForm,
     };
-  }
+  
 }

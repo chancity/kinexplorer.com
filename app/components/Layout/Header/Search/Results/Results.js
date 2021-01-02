@@ -67,9 +67,7 @@ const Results = ({open}) => {
             <EmptyResultText>No results for {searchTerm}</EmptyResultText>
           </EmptyResultContainer>
           :
-          <FlexContainer>
-
-          </FlexContainer>
+          <FlexContainer />
         : null}
     </Container>
   );

@@ -8,6 +8,6 @@ export default {
   initialError: [],
   errorSelector: {
     requiredField: requiredFieldErrorSelector,
-    emailOnly: emailOnly,
+    emailOnly,
   },
 };

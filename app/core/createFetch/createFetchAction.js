@@ -3,7 +3,7 @@ import {FETCH_BEGIN, FETCH_ERROR, FETCH_SUCCESS} from './types';
 const camelToSnake = (str) => {
   return str
   .replace(/[\w]([A-Z])/g, function(m) {
-    return m[0] + '_' + m[1];
+    return `${m[0]  }_${  m[1]}`;
   })
   .toUpperCase();
 };

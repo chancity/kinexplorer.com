@@ -3,7 +3,7 @@ const regexErrorSelector = (regex, message) => {
 
   return (input) => {
     if (!_regex.test(input))
-      return message;
+      {return message;}
   };
 };
 
