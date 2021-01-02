@@ -29,7 +29,6 @@
     "react-lazy-load-image-component": "^1.4.3",
     "react-content-loader": "^5.0.4",
     "redux-persist": "^6.0.0",
-    "axios": "^0.19.2",
     "lodash": "^4.17.20",
     "@zeit/next-source-maps": "0.0.4-canary.1",
     "react-axe": "^3.5.3",
