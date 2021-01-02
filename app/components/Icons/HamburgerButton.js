@@ -45,16 +45,16 @@ const HamburgerButton = styled.button`
     :before,
     div {
       height: 0.05rem;
-      margin: 0.625rem 0;
+      margin: 0.825rem 0;
     }
 
     ${(p) => p.open &&
       `
       :before {
-        transform: translateY(0.675rem) rotate(135deg);
+        transform: translateY(0.875rem) rotate(135deg);
       }
       :after {
-        transform: translateY(-0.675rem) rotate(-135deg);
+        transform: translateY(-0.875rem) rotate(-135deg);
       }
       div {
         transform: scale(0);
