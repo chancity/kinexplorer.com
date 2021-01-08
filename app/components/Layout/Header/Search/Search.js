@@ -169,7 +169,6 @@ const Search = () => {
         open={searchOpen}
         onSubmit={(e) => {
           e.preventDefault();
-          window.location.href = `/shop/SearchDisplay?categoryId=&storeId=10151&catalogId=10051&langId=-1&sType=SimpleSearch&resultCatEntryType=2&showResultsPage=true&searchSource=Q&pageView=&beginIndex=0&pageSize=48&fromPageValue=search&searchKeyword=&searchTerm=${searchTerm}`;
         }}>
         <FloatInput
           id="header-search"
